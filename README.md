@@ -11,6 +11,7 @@ Todas ellas humanoides, saben decir a que raza pertenecen y tienen en común las
 * `resistencia`: nos dirá un número que representa la cantidad de unidades de vida que puede soportar un personaje antes de morir, y que depende de la raza.
 * `poderDeAtaque`: nos dirá un número que representa la cantidad de unidades de poder que posee un personaje para un ataque. Será determinado por la `suerte()` en cada ataque y será un número entero aleatorio entre -10 y 11. Luego, cada raza tendrá un modificador que se sumará a este número.
 * `poderDeDefensa`: nos dirá un número que representa la cantidad de unidades de vida que posee un personaje para defenderse de un ataque. Es un 110% de su poder de ataque y cada raza tendrá un modificador que se sumará a este número.
+* `nombre`: El nombre que tiene el personaje, y es un string.
 
 Cuando un personaje decide `atacarA(unPersonaje)`: 
 * si su poderDeAtaque es mayor que el poderDeDefensa de la víctima, se reducirá la energía vital de la víctima en un valor que es la diferencia entre ambos poderes. 
@@ -30,7 +31,7 @@ Nos centraremos por ahora en las siguientes razas, y cada uno con sus caracterí
 ####
 * ### `Elfo`: tendrá las siguientes características:
   * `energíaVital`: un número que representa la suma de su chispaVital más un valor aleatorio entre 90 y 110 que se calculará al momento que se instancie el nuevo elfo.
-  * `masaMuscular`: un valor aleatorio entre 20 y 51 que se calculará al momento que se instancie el nuevo humano.
+  * `masaMuscular`: un valor aleatorio entre 20 y 51 que se calculará al momento que se instancie el nuevo elfo.
   * `nivelDeMagia`: un valor aleatorio entre 1 y 8 que se calculará al momento que se instancie el nuevo elfo.
   * `resistencia`: en el caso de los elfos, su resistencia es igual a un 100% de su energiaVital.
   * `poderDeAtaque`: al poder que se calcula por ser humanoide, se le suma su masa muscular y su resistencia.
@@ -40,7 +41,7 @@ Nos centraremos por ahora en las siguientes razas, y cada uno con sus caracterí
 ####
 * ### `Enano`: conoceremos su edad que no cambia, y sus características son:
   * `energíaVital`: un número que representa la suma de su chispaVital más un valor aleatorio entre 75 y 100 que se calculará al momento que se instancie el nuevo enano.
-  * `masaMuscular`: un valor aleatorio entre 35 y 45 que se calculará al momento que se instancie el nuevo humano.
+  * `masaMuscular`: un valor aleatorio entre 35 y 45 que se calculará al momento que se instancie el nuevo enano.
   * `nivelDeIra`: un valor aleatorio entre 1 y 1.3 con precisión decimal de 2, que se calculará al momento que se instancie el nuevo enano.
   * `resistencia`: en el caso de los enanos, será igual a su energía vital multiplicado por la suma de su nivel de ira más la edad sobre 50. Para el cálculo de este coeficiente, considerar que la edad mínima del enano es 18 años y la máxima es 350.
   * `poderDeAtaque`: al poder que se calcula por ser humanoide, se le suma la mitad de su masa muscular y su resistencia.
@@ -49,9 +50,9 @@ Nos centraremos por ahora en las siguientes razas, y cada uno con sus caracterí
 
 ####
 * ### `Hobbit`: sabremos su edad que no cambia, y sus características serán:
-  * `energíaVital`: un número que representa la suma de su chispaVital más un valor aleatorio entre 50 y 90 que se calculará al momento que se instancie el nuevo enano.
-  * `masaMuscular`: un valor aleatorio entre 20 y 30 que se calculará al momento que se instancie el nuevo humano.
-  * `nivelDeAgilidad`: un valor aleatorio entre 1.1 y 1.8 con precisión decimal de 2, que se calculará al momento que se instancie el nuevo enano.
+  * `energíaVital`: un número que representa la suma de su chispaVital más un valor aleatorio entre 50 y 90 que se calculará al momento que se instancie el nuevo hobbit.
+  * `masaMuscular`: un valor aleatorio entre 20 y 30 que se calculará al momento que se instancie el nuevo hobbit.
+  * `nivelDeAgilidad`: un valor aleatorio entre 1.1 y 1.8 con precisión decimal de 2, que se calculará al momento que se instancie el nuevo hobbit.
   * `resistencia`: será igual a su energía vital multiplicado por la suma de su nivel de agilidad más la edad sobre 50. Para el cálculo de este coeficiente, considerar la edad mínima de 20 y la máxima de 200.
   * `poderDeAtaque`: al poder que se calcula por ser humanoide, se le suma la mitad de su masa muscular y su resistencia.
   * `poderDeDefensa`: es el mismo que le corresponde por ser humanoide multiplicado por el coeficiente de nivel de agilidad.
@@ -123,7 +124,7 @@ También, debemos poder conocer de la comunidad lo siguiente:
 * `poderDeDefensa`: la suma de los poderes de defensa de sus miembros.
 * `miembrosConPoderDeDefensaMayorAPromedio`: la lista de los miembros que tienen un poder de defensa mayor al promedio de poder de defensa de la comunidad.	
 * `todosConMasaMuscularMayorA(unValor)`: indica si todos los miembros tienen una masa muscular mayor al valor indicado.
-* `miembroActivoEnLaComunidad(unMiembro)`: informa si el miembro indicado está activo en la comunidad.
+* `miembroActivoEnLaComunidad(nombreDeMiembro)`: informa si el miembro indicado está activo en la comunidad.
 * `vaPerdiendo`: Si la cantidad de miembros de la comunidad que perecieron es mayor que la cantidad de miembros que la comunidad tiene vivos, y además Sauron esta vivo.
 * `miembroConMayorPoderDeAtaque`: el miembro de la comunidad con mayor poder de ataque.
 * `maximoPoderDeDefensa`: el máximo poder de defensa en la comunidad.
