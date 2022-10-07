@@ -11,6 +11,7 @@ Todas ellas humanoides, saben decir a que raza pertenecen y tienen en común las
 * `resistencia`: nos dirá un número que representa la cantidad de unidades de vida que puede soportar un personaje antes de morir, y que depende de la raza.
 * `poderDeAtaque`: nos dirá un número que representa la cantidad de unidades de poder que posee un personaje para un ataque. Será determinado por la `suerte()` en cada ataque y será un número entero aleatorio entre -10 y 11. Luego, cada raza tendrá un modificador que se sumará a este número.
 * `poderDeDefensa`: nos dirá un número que representa la cantidad de unidades de vida que posee un personaje para defenderse de un ataque. Es un 110% de su poder de ataque y cada raza tendrá un modificador que se sumará a este número.
+* `nombre`: El nombre que tiene el personaje, y es un string.
 
 Cuando un personaje decide `atacarA(unPersonaje)`: 
 * si su poderDeAtaque es mayor que el poderDeDefensa de la víctima, se reducirá la energía vital de la víctima en un valor que es la diferencia entre ambos poderes. 
