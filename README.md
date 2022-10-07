@@ -30,7 +30,7 @@ Nos centraremos por ahora en las siguientes razas, y cada uno con sus caracterí
 ####
 * ### `Elfo`: tendrá las siguientes características:
   * `energíaVital`: un número que representa la suma de su chispaVital más un valor aleatorio entre 90 y 110 que se calculará al momento que se instancie el nuevo elfo.
-  * `masaMuscular`: un valor aleatorio entre 20 y 51 que se calculará al momento que se instancie el nuevo humano.
+  * `masaMuscular`: un valor aleatorio entre 20 y 51 que se calculará al momento que se instancie el nuevo elfo.
   * `nivelDeMagia`: un valor aleatorio entre 1 y 8 que se calculará al momento que se instancie el nuevo elfo.
   * `resistencia`: en el caso de los elfos, su resistencia es igual a un 100% de su energiaVital.
   * `poderDeAtaque`: al poder que se calcula por ser humanoide, se le suma su masa muscular y su resistencia.
