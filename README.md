@@ -124,7 +124,7 @@ También, debemos poder conocer de la comunidad lo siguiente:
 * `poderDeDefensa`: la suma de los poderes de defensa de sus miembros.
 * `miembrosConPoderDeDefensaMayorAPromedio`: la lista de los miembros que tienen un poder de defensa mayor al promedio de poder de defensa de la comunidad.	
 * `todosConMasaMuscularMayorA(unValor)`: indica si todos los miembros tienen una masa muscular mayor al valor indicado.
-* `miembroActivoEnLaComunidad(unMiembro)`: informa si el miembro indicado está activo en la comunidad.
+* `miembroActivoEnLaComunidad(nombreDeMiembro)`: informa si el miembro indicado está activo en la comunidad.
 * `vaPerdiendo`: Si la cantidad de miembros de la comunidad que perecieron es mayor que la cantidad de miembros que la comunidad tiene vivos, y además Sauron esta vivo.
 * `miembroConMayorPoderDeAtaque`: el miembro de la comunidad con mayor poder de ataque.
 * `maximoPoderDeDefensa`: el máximo poder de defensa en la comunidad.
