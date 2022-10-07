@@ -40,7 +40,7 @@ Nos centraremos por ahora en las siguientes razas, y cada uno con sus caracterí
 ####
 * ### `Enano`: conoceremos su edad que no cambia, y sus características son:
   * `energíaVital`: un número que representa la suma de su chispaVital más un valor aleatorio entre 75 y 100 que se calculará al momento que se instancie el nuevo enano.
-  * `masaMuscular`: un valor aleatorio entre 35 y 45 que se calculará al momento que se instancie el nuevo humano.
+  * `masaMuscular`: un valor aleatorio entre 35 y 45 que se calculará al momento que se instancie el nuevo enano.
   * `nivelDeIra`: un valor aleatorio entre 1 y 1.3 con precisión decimal de 2, que se calculará al momento que se instancie el nuevo enano.
   * `resistencia`: en el caso de los enanos, será igual a su energía vital multiplicado por la suma de su nivel de ira más la edad sobre 50. Para el cálculo de este coeficiente, considerar que la edad mínima del enano es 18 años y la máxima es 350.
   * `poderDeAtaque`: al poder que se calcula por ser humanoide, se le suma la mitad de su masa muscular y su resistencia.
@@ -49,9 +49,9 @@ Nos centraremos por ahora en las siguientes razas, y cada uno con sus caracterí
 
 ####
 * ### `Hobbit`: sabremos su edad que no cambia, y sus características serán:
-  * `energíaVital`: un número que representa la suma de su chispaVital más un valor aleatorio entre 50 y 90 que se calculará al momento que se instancie el nuevo enano.
-  * `masaMuscular`: un valor aleatorio entre 20 y 30 que se calculará al momento que se instancie el nuevo humano.
-  * `nivelDeAgilidad`: un valor aleatorio entre 1.1 y 1.8 con precisión decimal de 2, que se calculará al momento que se instancie el nuevo enano.
+  * `energíaVital`: un número que representa la suma de su chispaVital más un valor aleatorio entre 50 y 90 que se calculará al momento que se instancie el nuevo hobbit.
+  * `masaMuscular`: un valor aleatorio entre 20 y 30 que se calculará al momento que se instancie el nuevo hobbit.
+  * `nivelDeAgilidad`: un valor aleatorio entre 1.1 y 1.8 con precisión decimal de 2, que se calculará al momento que se instancie el nuevo hobbit.
   * `resistencia`: será igual a su energía vital multiplicado por la suma de su nivel de agilidad más la edad sobre 50. Para el cálculo de este coeficiente, considerar la edad mínima de 20 y la máxima de 200.
   * `poderDeAtaque`: al poder que se calcula por ser humanoide, se le suma la mitad de su masa muscular y su resistencia.
   * `poderDeDefensa`: es el mismo que le corresponde por ser humanoide multiplicado por el coeficiente de nivel de agilidad.
